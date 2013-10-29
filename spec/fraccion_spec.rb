@@ -44,39 +44,6 @@ describe Fraccion do
 		
 	end
 	
-	describe "# Comparar fracciones" do
-		it "Se debe comparar si dos fracciones son iguales con ==" do
-			@f2 == @f3
-			@f2.num().should eq(@f3.num())
-			@f2.denom().should eq(@f3.denom())
-		end
-		
-		it "Se debe de poder comprobar si una fracion es menor que otra" do
-			@f2 < @f3
-			
-			
-		end
-		
-		it " Se debe de poder comprobar si una fracion es mayor que otra" do
-			@f2 > @f3
-	
-	
-		end
-		
-		it "Se debe de poder comprobar si una fracion es menor o igual que otra" do
-			@f2 <= @f3
-	
-	
-		end
-		
-		it "Se debe de poder comprobar si una fracion es mayor o igual que otra" do
-			@f2 >= @f3
-		
-		
-		end
-		
-	end
-	
 	describe "# Metodo abs" do
 		it "Se debe calcular el valor absoluto de una fraccion con el método abs" do
 			@f4.num().abs.should eq(1)

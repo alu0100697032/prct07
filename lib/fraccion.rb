@@ -78,4 +78,8 @@ class Fraccion
 	def /(a)
 		Fraccion.new(@num*a.den, @den*a.num)
 	end
+	
+	def <=>(other)
+		(self.num.to_f / self.den.to_f) <=> (other.nume.to_f / other.den.to_f)
+	end
 end
